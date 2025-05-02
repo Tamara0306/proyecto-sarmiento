@@ -34,7 +34,7 @@ body {
     border-radius: 8px;
   }
   
-  /* Botones personalizados */
+
   .btn-custom {
     background-color: #0d6efd;
     color: white;
@@ -48,9 +48,8 @@ body {
     background-color: #0b5ed7;
   }
   
-  /* Media queries */
   
-  /* Celulares (menos de 576px) */
+  /* Celulares  */
   @media (max-width: 575.98px) {
     header .container {
       flex-direction: column;
@@ -72,7 +71,7 @@ body {
     }
   }
   
-  /* Tablets (entre 576px y 991px) */
+  /* Tablets */
   @media (min-width: 576px) and (max-width: 991.98px) {
     h1 {
       font-size: 1.5rem;
@@ -83,7 +82,7 @@ body {
     }
   }
   
-  /* Computadoras de escritorio (más de 992px) */
+  /* Computadoras de escritorio  */
   @media (min-width: 992px) {
     h1 {
       font-size: 2rem;
@@ -93,5 +92,7 @@ body {
       max-width: 1140px;
     }
   }
+  
+  
   
   
