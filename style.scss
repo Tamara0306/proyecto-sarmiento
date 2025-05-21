@@ -1,0 +1,48 @@
+// Variables
+$primary: #0d6efd;
+$dark: #212529;
+$light: #f8f9fa;
+
+// Mixin
+@mixin transition($prop...) {
+  transition: $prop 0.3s ease-in-out;
+}
+
+// Extends
+%rounded {
+  border-radius: 0.5rem;
+}
+
+// Base
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: $light;
+  color: $dark;
+}
+
+h1, h2, h3, h4 {
+  color: $primary;
+}
+
+.btn-custom {
+  background-color: $primary;
+  color: white;
+  @include transition(all);
+  @extend %rounded;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+
+// Animación fade-in
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
