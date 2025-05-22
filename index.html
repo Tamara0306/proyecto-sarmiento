@@ -1,6 +1,6 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,23 +8,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <header class="bg-dark text-white">
-    <div class="container py-3 d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center gap-3">
-        <img src="assets/escudo.jpeg" width="70" alt="Escudo" />
-        <h1 class="h4 m-0">CLUB ATLÉTICO SARMIENTO</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+          <img src="assets/escudo.jpeg" width="50" alt="Escudo" />
+          CLUB ATLÉTICO SARMIENTO
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/historia.html">El club</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/socios.html">Socios</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/futbol.html">Fútbol</a></li>
+            <li class="nav-item"><a class="nav-link" href="pages/deportes.html">Inscripción a deportes</a></li>
+          </ul>
+        </div>
       </div>
-      <nav>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-white active" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/historia.html">El club</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/socios.html">Socios</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/futbol.html">Fútbol</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="pages/deportes.html">Inscripción a deportes</a></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
 
   <main class="container text-center py-5 fadeIn">
@@ -37,7 +44,10 @@
     <p class="mb-0">Contacto: +54 9 223-590-1135</p>
     <p>2025 Club Atlético Sarmiento</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
 
 
