@@ -2,11 +2,19 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Historia | Club Atlético Sarmiento</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fútbol | Club Atlético Sarmiento</title>
+  <meta name="description" content="Descubrí todo sobre el fútbol en el Club Atlético Sarmiento: categorías, entrenadores y competencias en Coronel Vidal.">
+  <meta name="keywords" content="Club Atlético Sarmiento, Fútbol, Infantiles, Juveniles, Primera División, Liga Marchiquitense, Coronel Vidal">
+  <meta name="author" content="Club Atlético Sarmiento">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-pZjw8f+ua7Kw1TIq0vK6Rqq/GRB1pvkbiZ9ErxQUFeqXfMGbxA6EwZRM1E/jnuIh" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -14,15 +22,16 @@
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
         <div class="d-flex align-items-center gap-3">
-          <img src="../assets/escudo.jpeg" alt="Escudo del club" width="70">
+          <img src="../assets/escudo.jpeg" alt="Escudo del Club Atlético Sarmiento" width="70" loading="lazy" />
           <h1 class="h4 m-0">CLUB ATLÉTICO SARMIENTO</h1>
         </div>
-        <nav class="w-100 w-md-auto">
+        <nav class="w-100 w-md-auto" aria-label="Menú principal">
           <ul class="nav flex-column flex-md-row">
-            <li class="nav-item"><a class="nav-link text-white active" href="#">El club</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="../pages/socios.html">Socios</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="../pages/futbol.html">Fútbol</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="../pages/deportes.html">Inscripción a deportes</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="historia.html">El club</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="socios.html">Socios</a></li>
+            <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="#">Fútbol</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="deportes.html">Inscripción a deportes</a></li>
           </ul>
         </nav>
       </div>
@@ -30,23 +39,38 @@
   </header>
 
   <main class="container py-5">
-    <section class="fadeIn">
-      <h2>Historia del Club</h2>
-      <p>El Club Atlético Sarmiento de Coronel Vidal fue fundado el 10 de octubre de 1950 por vecinos con la visión de
-        crear un espacio de encuentro social y deportivo. Desde entonces, ha sido protagonista en el desarrollo de la
-        comunidad marchiquitense.</p>
-      <p>Comenzando con el fútbol como actividad principal, el club se destacó en ligas regionales como la Liga de
-        Fútbol de Mar Chiquita y la Liga Madariaguense, obteniendo títulos y formando jugadores reconocidos.</p>
-      <p>Con el tiempo, se incorporaron nuevas disciplinas como gimnasia artística, taekwondo, bochas y natación.
-        Además, el club fue ampliando su infraestructura y su rol social como espacio de eventos y actividades
-        comunitarias.</p>
+    <section class="fadeIn" aria-labelledby="titulo-futbol">
+      <h2 id="titulo-futbol">Fútbol en el Club</h2>
+      <p>La disciplina histórica del Club Atlético Sarmiento. Desde su fundación, el fútbol ha sido una pasión que une generaciones de jugadores, familias y simpatizantes.</p>
     </section>
 
-    <section class="fadeIn">
-      <h3>Identidad y legado</h3>
-      <p>El estadio de fútbol es uno de los íconos de Coronel Vidal. Generaciones de vecinos han vivido ahí alegrías,
-        campeonatos y momentos inolvidables. Hoy, Sarmiento sigue apostando al deporte formativo y al crecimiento
-        colectivo.</p>
+    <section class="row mt-4 fadeIn" aria-label="Información de fútbol">
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <h3>Categorías</h3>
+        <ul>
+          <li>Infantiles (4 a 11 años)</li>
+          <li>Juveniles (11 a 17 años)</li>
+          <li>Juveniles (17 a 20 años)</li>
+          <li>Primera División</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4 mb-4 mb-md-0">
+        <h3>Entrenadores</h3>
+        <ul>
+          <li>Santiago Ruiz de Azua (Primera)</li>
+          <li>Juan Pablo Laxalde (Reserva)</li>
+          <li>Lorenzo Angeli (Juveniles)</li>
+          <li>Nicolás Negro (Infantiles)</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-4">
+        <h3>Competiciones</h3>
+        <ul>
+          <li>Liga Marchiquitense</li>
+          <li>Encuentros regionales</li>
+          <li>Campeonatos amistosos</li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -56,16 +80,16 @@
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Contacto</h5>
           <ul class="list-unstyled">
-            <li>📞 +54 9 223-590-1135</li>
-            <li>📧 contacto@sarmiento.com.ar</li>
+            <li>📞 <a href="tel:+542235901135" class="text-white text-decoration-none">+54 9 223-590-1135</a></li>
+            <li>📧 <a href="mailto:contacto@sarmiento.com.ar" class="text-white text-decoration-none">contacto@sarmiento.com.ar</a></li>
             <li>📍 Coronel Vidal, Buenos Aires</li>
           </ul>
         </div>
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Seguinos</h5>
-          <a href="#" class="text-white me-3 text-decoration-none">📘 Facebook</a>
-          <a href="#" class="text-white me-3 text-decoration-none">📸 Instagram</a>
-          <a href="#" class="text-white text-decoration-none">🐦 Twitter</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook">📘 Facebook</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram">📸 Instagram</a>
+          <a href="#" class="text-white text-decoration-none" aria-label="Twitter">🐦 Twitter</a>
         </div>
       </div>
       <hr class="border-light" />
@@ -75,10 +99,13 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQTa1Mo+gfQ5oOaNRW6cI7K3A/FOSJS1aPAgGyOsmBt4E5wKIm7J7wHGs88V9vcK"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
+
 
 
 
