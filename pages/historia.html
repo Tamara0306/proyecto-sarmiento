@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>El Club | Club Atlético Sarmiento</title>
-  <meta name="description" content="Conocé la historia y trayectoria del Club Atlético Sarmiento, una institución dedicada al deporte y la comunidad." />
-  <meta name="keywords" content="Club Atlético Sarmiento, historia, trayectoria, deporte, comunidad" />
-  <meta name="author" content="Club Atlético Sarmiento" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Club Atlético Sarmiento - El Club" />
-  <meta property="og:description" content="Conocé la historia y trayectoria del Club Atlético Sarmiento, una institución dedicada al deporte y la comunidad." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tamara0306.github.io/proyecto-sarmiento/pages/historia.html" />
-  <meta property="og:image" content="https://tamara0306.github.io/proyecto-sarmiento/assets/escudo.jpeg" />
+  <title>Historia | Club Atlético Sarmiento</title>
+  <meta name="description" content="Conocé la historia del Club Atlético Sarmiento de Coronel Vidal. Desde sus inicios en 1950 hasta convertirse en un referente social y deportivo.">
+  <meta name="keywords" content="Club Atlético Sarmiento, Historia, Coronel Vidal, Deportes, Comunidad, Fútbol">
+  <meta name="author" content="Club Atlético Sarmiento">
+  <meta name="robots" content="index, follow">
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pZjw8f+ua7Kw1TIq0vK6Rqq/GRB1pvkbiZ9ErxQUFeqXfMGbxA6EwZRM1E/jnuIh" crossorigin="anonymous" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="../assets/escudo.jpeg" type="image/jpeg" />
 </head>
+
 <body>
   <header class="bg-dark text-white p-3">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
         <div class="d-flex align-items-center gap-3">
-          <img src="../assets/escudo.jpeg" width="70" alt="Escudo del Club Atlético Sarmiento" />
+          <img src="../assets/escudo.jpeg" alt="Escudo del Club Atlético Sarmiento" width="70" loading="lazy">
           <h1 class="h4 m-0">CLUB ATLÉTICO SARMIENTO</h1>
         </div>
-        <nav>
-          <ul class="nav" role="navigation" aria-label="Navegación principal">
-            <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link text-white active" href="#" aria-current="page">El club</a></li>
+        <nav class="w-100 w-md-auto" aria-label="Menú principal">
+          <ul class="nav flex-column flex-md-row">
+            <li class="nav-item"><a class="nav-link text-white active" href="#">El club</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="socios.html">Socios</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="futbol.html">Fútbol</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="deportes.html">Inscripción a deportes</a></li>
@@ -46,10 +37,18 @@
     </div>
   </header>
 
-  <main class="container py-5 fadeIn">
-    <h2>Historia del Club</h2>
-    <p>Desde su fundación, el Club Atlético Sarmiento ha sido un pilar en la comunidad, promoviendo el deporte y la integración social. A lo largo de los años, hemos crecido y evolucionado, siempre manteniendo nuestros valores fundamentales.</p>
-    <img src="../assets/historia.jpg" alt="Imagen histórica del Club Atlético Sarmiento" class="img-fluid my-4" style="max-width: 600px;" />
+  <main class="container py-5">
+    <section class="fadeIn" aria-labelledby="historia-club">
+      <h2 id="historia-club">Historia del Club</h2>
+      <p>El Club Atlético Sarmiento de Coronel Vidal fue fundado el 10 de octubre de 1950 por vecinos con la visión de crear un espacio de encuentro social y deportivo. Desde entonces, ha sido protagonista en el desarrollo de la comunidad marchiquitense.</p>
+      <p>Comenzando con el fútbol como actividad principal, el club se destacó en ligas regionales como la Liga de Fútbol de Mar Chiquita y la Liga Madariaguense, obteniendo títulos y formando jugadores reconocidos.</p>
+      <p>Con el tiempo, se incorporaron nuevas disciplinas como gimnasia artística, taekwondo, bochas y natación. Además, el club fue ampliando su infraestructura y su rol social como espacio de eventos y actividades comunitarias.</p>
+    </section>
+
+    <section class="fadeIn" aria-labelledby="identidad-legado">
+      <h3 id="identidad-legado">Identidad y legado</h3>
+      <p>El estadio de fútbol es uno de los íconos de Coronel Vidal. Generaciones de vecinos han vivido ahí alegrías, campeonatos y momentos inolvidables. Hoy, Sarmiento sigue apostando al deporte formativo y al crecimiento colectivo.</p>
+    </section>
   </main>
 
   <footer class="bg-dark text-white pt-4 pb-3 mt-5">
@@ -58,7 +57,26 @@
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Contacto</h5>
           <ul class="list-unstyled">
-            <li>📞 +54 9 223-590-1135</li>
-            <li>📧 contacto@sarm
-::contentReference[oaicite:0]{index=0}
- 
+            <li>📞 <a href="tel:+542235901135" class="text-white text-decoration-none">+54 9 223-590-1135</a></li>
+            <li>📧 <a href="mailto:contacto@sarmiento.com.ar" class="text-white text-decoration-none">contacto@sarmiento.com.ar</a></li>
+            <li>📍 Coronel Vidal, Buenos Aires</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase">Seguinos</h5>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook">📘 Facebook</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram">📸 Instagram</a>
+          <a href="#" class="text-white text-decoration-none" aria-label="Twitter">🐦 Twitter</a>
+        </div>
+      </div>
+      <hr class="border-light" />
+      <div class="text-center">
+        <p class="mb-0">© 2025 Club Atlético Sarmiento. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQTa1Mo+gfQ5oOaNRW6cI7K3A/FOSJS1aPAgGyOsmBt4E5wKIm7J7wHGs88V9vcK" crossorigin="anonymous"></script>
+</body>
+
+</html>
