@@ -2,43 +2,51 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Socios | Club Atlético Sarmiento</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <meta name="description" content="Asociate al Club Atlético Sarmiento y disfrutá de beneficios exclusivos, eventos, deportes y participación institucional.">
+  <meta name="keywords" content="Club Atlético Sarmiento, Socios, Inscripción, Beneficios, Cuota, Formulario, Coronel Vidal">
+  <meta name="author" content="Club Atlético Sarmiento">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-pZjw8f+ua7Kw1TIq0vK6Rqq/GRB1pvkbiZ9ErxQUFeqXfMGbxA6EwZRM1E/jnuIh" crossorigin="anonymous" />
 </head>
 
 <body>
   <header class="bg-dark text-white">
-    <nav class="navbar navbar-expand-md navbar-dark container">
-      <a class="navbar-brand d-flex align-items-center gap-3" href="#">
-        <img src="../assets/escudo.jpeg" alt="Escudo del club" width="70">
+    <nav class="navbar navbar-expand-md navbar-dark container" aria-label="Menú principal">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="../index.html">
+        <img src="../assets/escudo.jpeg" alt="Escudo del Club Atlético Sarmiento" width="70" loading="lazy" />
         <span class="h4 m-0">CLUB ATLÉTICO SARMIENTO</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menú">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse mt-3 mt-md-0" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="../pages/historia.html">El club</a></li>
-          <li class="nav-item"><a class="nav-link text-white active" href="#">Socios</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="../pages/futbol.html">Fútbol</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="../pages/deportes.html">Inscripción a deportes</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="historia.html">El club</a></li>
+          <li class="nav-item"><a class="nav-link text-white active" aria-current="page" href="#">Socios</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="futbol.html">Fútbol</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="deportes.html">Inscripción a deportes</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
   <main class="container py-5">
-    <section class="fadeIn">
-      <h2>Hacete Socio</h2>
-      <p>Ser socio del Club Atlético Sarmiento es ser parte activa de una comunidad que valora el deporte, la cultura y
-        la inclusión. Los socios acceden a beneficios exclusivos y ayudan al crecimiento del club.</p>
+    <section class="fadeIn" aria-labelledby="titulo-socios">
+      <h2 id="titulo-socios">Hacete Socio</h2>
+      <p>Ser socio del Club Atlético Sarmiento es ser parte activa de una comunidad que valora el deporte, la cultura y la inclusión. Los socios acceden a beneficios exclusivos y ayudan al crecimiento del club.</p>
     </section>
 
-    <section class="row mt-4 fadeIn">
+    <section class="row mt-4 fadeIn" aria-label="Información para socios">
       <div class="col-12 col-md-6 mb-4 mb-md-0">
         <h3>Beneficios</h3>
         <ul>
@@ -58,9 +66,9 @@
       </div>
     </section>
 
-    <section class="row mt-4 fadeIn">
-      <h4>Formulario de Inscripción</h4>
-      <form class="row g-3" action="#" method="post">
+    <section class="row mt-4 fadeIn" aria-labelledby="form-inscripcion">
+      <h4 id="form-inscripcion">Formulario de Inscripción</h4>
+      <form class="row g-3 needs-validation" action="#" method="post" novalidate>
         <div class="col-12 col-md-6">
           <label for="nombre" class="form-label">Nombre y apellido</label>
           <input type="text" class="form-control" id="nombre" name="nombre" required>
@@ -83,35 +91,31 @@
   <footer class="bg-dark text-white pt-4 pb-3 mt-5">
     <div class="container text-center text-md-start">
       <div class="row">
-        <!-- Información de contacto -->
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Contacto</h5>
           <ul class="list-unstyled">
-            <li>📞 +54 9 223-590-1135</li>
-            <li>📧 contacto@sarmiento.com.ar</li>
+            <li>📞 <a href="tel:+542235901135" class="text-white text-decoration-none">+54 9 223-590-1135</a></li>
+            <li>📧 <a href="mailto:contacto@sarmiento.com.ar" class="text-white text-decoration-none">contacto@sarmiento.com.ar</a></li>
             <li>📍 Coronel Vidal, Buenos Aires</li>
           </ul>
         </div>
-
-        <!-- Redes sociales -->
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Seguinos</h5>
-          <a href="#" class="text-white me-3 text-decoration-none">📘 Facebook</a>
-          <a href="#" class="text-white me-3 text-decoration-none">📸 Instagram</a>
-          <a href="#" class="text-white text-decoration-none">🐦 Twitter</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook">📘 Facebook</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram">📸 Instagram</a>
+          <a href="#" class="text-white text-decoration-none" aria-label="Twitter">🐦 Twitter</a>
         </div>
       </div>
-
       <hr class="border-light" />
-
       <div class="text-center">
         <p class="mb-0">© 2025 Club Atlético Sarmiento. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQTa1Mo+gfQ5oOaNRW6cI7K3A/FOSJS1aPAgGyOsmBt4E5wKIm7J7wHGs88V9vcK"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
-
