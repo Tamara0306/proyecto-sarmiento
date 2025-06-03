@@ -3,54 +3,57 @@
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO básico -->
-  <title>Inscripción a Deportes | Club Atlético Sarmiento</title>
-  <meta name="description" content="Formulario de inscripción a las disciplinas deportivas del Club Atlético Sarmiento. Unite a nuestras actividades y deportes.">
-  <meta name="keywords" content="Club Atlético Sarmiento, deportes, inscripción, fútbol, taekwondo, natación, gimnasia artística">
-  <meta name="author" content="Club Atlético Sarmiento">
+  <!-- SEO -->
+  <title>Deportes | Club Atlético Sarmiento</title>
+  <meta name="description" content="Formulario de inscripción a las actividades deportivas del Club Atlético Sarmiento. Unite a nuestras disciplinas: fútbol, natación, taekwondo y más." />
+  <meta name="keywords" content="Club Atlético Sarmiento, deportes, inscripción, fútbol, natación, taekwondo, gimnasia" />
+  <meta name="author" content="Club Atlético Sarmiento" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Club Atlético Sarmiento - Inscripción a Deportes" />
+  <meta property="og:description" content="Completá tu inscripción en las actividades deportivas del club." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tamara0306.github.io/proyecto-sarmiento/" />
+  <meta property="og:image" content="https://tamara0306.github.io/proyecto-sarmiento/activos/escudo.jpeg" />
 
   <!-- Performance -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Bootstrap + CSS personalizado -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../CSS/style.css" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="../activos/favicon.png" />
-
+  <link rel="icon" href="../activos/escudo.jpeg" type="image/jpeg" />
 </head>
 
 <body>
-  <header class="bg-dark text-white p-3" role="banner">
+  <header class="bg-dark text-white p-3">
     <div class="container">
       <div class="d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center gap-3">
-          <img src="../activos/escudo.jpeg" width="70" alt="Escudo del Club Atlético Sarmiento" />
+          <img src="../assets/escudo.jpeg" width="70" alt="Escudo del Club Atlético Sarmiento" />
           <h1 class="h4 m-0">CLUB ATLÉTICO SARMIENTO</h1>
         </div>
-        <nav role="navigation" aria-label="Menú principal">
-          <ul class="nav">
+        <nav>
+          <ul class="nav" role="navigation" aria-label="Navegación principal">
             <li class="nav-item"><a class="nav-link text-white" href="../index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="historia.html">El club</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="socios.html">Socios</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="futbol.html">Fútbol</a></li>
-            <li class="nav-item"><a class="nav-link text-white active" href="#">Inscripción a deportes</a></li>
+            <li class="nav-item"><a class="nav-link text-white active" href="#" aria-current="page">Inscripción a deportes</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
 
-  <main class="container py-5 fadeIn" role="main">
+  <main class="container py-5 fadeIn">
     <h2>Inscripción a Deportes</h2>
     <p>Completá el formulario para inscribirte en una disciplina deportiva del club.</p>
-
-    <form class="row g-3 mt-4" action="#" method="post" aria-label="Formulario de inscripción a deportes">
+    <form class="row g-3 mt-4" action="#" method="post" aria-label="Formulario de inscripción deportiva">
       <div class="col-md-6">
         <label for="nombre" class="form-label">Nombre completo</label>
         <input type="text" class="form-control" id="nombre" name="nombre" required aria-required="true">
@@ -67,39 +70,32 @@
       </div>
       <div class="col-12">
         <label for="comentarios" class="form-label">Comentarios</label>
-        <textarea class="form-control" id="comentarios" name="comentarios" rows="3" aria-label="Escribí tus comentarios"></textarea>
+        <textarea class="form-control" id="comentarios" name="comentarios" rows="3" aria-label="Comentarios adicionales"></textarea>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-custom" aria-label="Enviar formulario">Enviar inscripción</button>
+        <button type="submit" class="btn btn-custom">Enviar inscripción</button>
       </div>
     </form>
   </main>
 
-  <footer class="bg-dark text-white pt-4 pb-3 mt-5" role="contentinfo">
+  <footer class="bg-dark text-white pt-4 pb-3 mt-5">
     <div class="container text-center text-md-start">
       <div class="row">
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Contacto</h5>
           <ul class="list-unstyled">
-            <li>📞 +54 9 223-590-1135</li>
-            <li>📧 contacto@sarmiento.com.ar</li>
-            <li>📍 Coronel Vidal, Buenos Aires</li>
+            <li><span aria-hidden="true">📞</span> +54 9 223-590-1135</li>
+            <li><span aria-hidden="true">📧</span> contacto@sarmiento.com.ar</li>
+            <li><span aria-hidden="true">📍</span> Coronel Vidal, Buenos Aires</li>
           </ul>
         </div>
         <div class="col-md-4 mb-4">
           <h5 class="text-uppercase">Seguinos</h5>
-          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook del club">📘 Facebook</a>
-          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram del club">📸 Instagram</a>
-          <a href="#" class="text-white text-decoration-none" aria-label="Twitter del club">🐦 Twitter</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Facebook">📘 Facebook</a>
+          <a href="#" class="text-white me-3 text-decoration-none" aria-label="Instagram">📸 Instagram</a>
+          <a href="#" class="text-white text-decoration-none" aria-label="Twitter">🐦 Twitter</a>
         </div>
       </div>
       <hr class="border-light" />
       <div class="text-center">
-        <p class="mb-0">© 2025 Club Atlético Sarmiento. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
-</body>
-
-</html>
-
+        <p class="mb-0">© 2025 Club Atlético Sarmiento. Todos los
